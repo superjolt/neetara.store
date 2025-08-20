@@ -5,30 +5,26 @@ const LinksSection = () => {
     {
       icon: Instagram,
       label: "Insta Page",
-      href: "https://www.instagram.com/neetara_label/",
-      gradient: "from-purple-500 to-pink-500",
-      external: true
+      href: "#",
+      gradient: "from-purple-500 to-pink-500"
     },
     {
       icon: Facebook,
       label: "Facebook",
-      href: "https://www.facebook.com/NeetaraLabel",
-      gradient: "from-blue-600 to-blue-500",
-      external: true
+      href: "#",
+      gradient: "from-blue-600 to-blue-500"
     },
     {
       icon: Youtube,
       label: "YouTube",
-      href: "https://www.youtube.com/@Neetara_Label",
-      gradient: "from-red-600 to-red-500",
-      external: true
+      href: "#",
+      gradient: "from-red-600 to-red-500"
     },
     {
       icon: Phone,
-      label: "91+ 8138923395",
-      href: "tel:+918138923395",
-      gradient: "from-gray-800 to-gray-700",
-      external: false
+      label: "91+ 1234567899",
+      href: "tel:+911234567899",
+      gradient: "from-gray-800 to-gray-700"
     }
   ];
 
@@ -47,8 +43,6 @@ const LinksSection = () => {
                 <a
                   key={index}
                   href={link.href}
-                  target={link.external ? "_blank" : undefined}
-                  rel={link.external ? "noopener noreferrer" : undefined}
                   className="group flex items-center gap-4 p-6 bg-card/70 backdrop-blur-sm rounded-2xl shadow-soft hover:shadow-elegant transition-all duration-300 hover:scale-105"
                 >
                   <div className={`p-4 rounded-2xl bg-gradient-to-r ${link.gradient} shadow-lg group-hover:scale-110 transition-transform duration-300`}>
