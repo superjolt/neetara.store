@@ -1,0 +1,38 @@
+name: Sync from staticNeetara
+
+on:
+  push:
+    branches:
+      - main  # trigger whenever boutique-blossom-page gets a push to main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout boutique-blossom-page
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add staticNeetara as remote
+        run: |
+          git remote add staticNeetara https://github.com/superjolt/staticNeetara.git
+          git fetch staticNeetara
+
+      - name: Copy everything except .github
+        run: |
+          git checkout staticNeetara/main -- .
+          git restore --staged .github || true
+          git checkout HEAD -- .github || true
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-sync from staticNeetara (excluding .github)"
+            git push origin main
+          fi
