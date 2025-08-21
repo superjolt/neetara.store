@@ -171,9 +171,14 @@ const About = () => {
               <p className="text-xl text-white/90 leading-relaxed mb-8">
                 Explore our collection and find pieces that speak to your unique sense of style.
               </p>
-              <button className="bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 backdrop-blur-sm border border-white/30">
+              <a 
+                href="https://www.instagram.com/neetara_label/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 backdrop-blur-sm border border-white/30"
+              >
                 Shop Now
-              </button>
+              </a>
             </div>
           </div>
         </section>

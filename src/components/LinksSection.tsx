@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Youtube, Phone } from "lucide-react";
+import { Instagram, Facebook, Youtube, Phone, MessageCircle } from "lucide-react";
 
 const LinksSection = () => {
   const socialLinks = [
@@ -29,6 +29,13 @@ const LinksSection = () => {
       href: "tel:+918138923395",
       gradient: "from-gray-800 to-gray-700",
       external: false
+    },
+    {
+      icon: MessageCircle,
+      label: "WhatsApp",
+      href: "https://wa.me/918138923395",
+      gradient: "from-green-600 to-green-500",
+      external: true
     }
   ];
 
