@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import LinksSection from "@/components/LinksSection";
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "Neetara - Home | Wear Your Story | Boutique";
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />

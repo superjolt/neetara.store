@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "Neetara - About | Wear Your Story | Boutique";
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
