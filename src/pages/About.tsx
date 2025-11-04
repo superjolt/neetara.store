@@ -177,7 +177,7 @@ const About = () => {
                 Explore our collection and find pieces that speak to your unique sense of style.
               </p>
               <a 
-                href="https://www.instagram.com/neetara_label/" 
+                href="https://www.instagram.com/neetara_sarees/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 backdrop-blur-sm border border-white/30"
