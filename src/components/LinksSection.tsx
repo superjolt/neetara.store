@@ -10,7 +10,7 @@ const LinksSection = () => {
       external: true
     },
     {
-      icon, Instagram,
+      icon: Instagram,
       label: "Insta Page (Churidar)",
       href: "https://www.instagram.com/neetara_handpicked/",
       gradient: "from-purple-500 to-pink-500",
