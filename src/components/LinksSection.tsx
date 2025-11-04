@@ -4,8 +4,15 @@ const LinksSection = () => {
   const socialLinks = [
     {
       icon: Instagram,
-      label: "Insta Page",
-      href: "https://www.instagram.com/neetara_label/",
+      label: "Insta Page (Sarees)",
+      href: "https://www.instagram.com/neetara_sarees/",
+      gradient: "from-purple-500 to-pink-500",
+      external: true
+    },
+    {
+      icon, Instagram,
+      label: "Insta Page (Churidar)",
+      href: "https://www.instagram.com/neetara_handpicked/",
       gradient: "from-purple-500 to-pink-500",
       external: true
     },
