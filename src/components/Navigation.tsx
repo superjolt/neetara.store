@@ -14,7 +14,7 @@ const Navigation = () => {
           </Link>
           
           <a 
-            href="https://www.instagram.com/neetara_label/" 
+            href="https://www.instagram.com/neetara_sarees/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-1 group transition-all hover:scale-105"
