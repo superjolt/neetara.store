@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import LinksSection from "@/components/LinksSection";
+import HeroSection from "@/components/IndexPage/HeroSection";
+import AboutSection from "@/components/IndexPage/AboutSection";
+import LinksSection from "@/components/IndexPage/LinksSection";
 
 const Index = () => {
   useEffect(() => {
