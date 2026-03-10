@@ -1,4 +1,4 @@
-import { Home, Store, Info } from "lucide-react";
+import { Home, Store, Info, CalendarDays } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
