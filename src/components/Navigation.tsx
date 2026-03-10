@@ -13,17 +13,12 @@ const Navigation = () => {
             <span className="text-sm font-medium text-foreground">Home</span>
           </Link>
           
-          <a 
-            href="https://www.instagram.com/neetara_sarees/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex flex-col items-center gap-1 group transition-all hover:scale-105"
-          >
+          <Link to="/items" className="flex flex-col items-center gap-1 group transition-all hover:scale-105">
             <div className="p-2 rounded-lg bg-secondary group-hover:bg-accent transition-colors">
               <Store className="w-5 h-5 text-foreground" />
             </div>
             <span className="text-sm font-medium text-foreground">Items</span>
-          </a>
+          </Link>
           
           <Link to="/about" className="flex flex-col items-center gap-1 group transition-all hover:scale-105">
             <div className="p-2 rounded-lg bg-secondary group-hover:bg-accent transition-colors">
